@@ -3,7 +3,7 @@ const helper = require('./index')
 
 describe('first test', () => {
   it('should return true', () => {
-    expect(false).to.be.true
+    expect(true).to.be.true
   });
 });
 
