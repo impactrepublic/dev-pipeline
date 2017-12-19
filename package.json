@@ -1,15 +1,27 @@
 {
   "name": "mc",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./src/index.test.js -w"
+    "test": "mocha ./src/index.test.js -w",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/impactrepublic/dev-pipeline.git"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "semantic-release": "^8.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
